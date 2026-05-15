@@ -205,10 +205,12 @@ async def handle_websocket(reader, writer):
 
 async def main():
     """Start the WebSocket server"""
+    import os
+    port = int(os.environ.get("PORT", 8081))
     server = await asyncio.start_server(
         handle_websocket,
         '0.0.0.0',
-        8081
+        port
     )
     
     logger.info("=" * 50)
