@@ -65,7 +65,7 @@ function getWebSocketUrl() {
   }
   
   // For Netlify deployment, use the same domain
-  return proto + '://' + location.host + '/.netlify/functions/index/ws';
+  return 'wss://csfinal1-production.up.railway.app/ws';
 }
 
 /**
