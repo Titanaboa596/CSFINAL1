@@ -1,0 +1,11 @@
+{
+  "name": "csgame2",
+  "version": "1.0.0",
+  "description": "CS Game 2 - Multiplayer Tank Game",
+  "scripts": {
+    "build": "echo 'Static build'",
+    "dev": "python api/index.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
